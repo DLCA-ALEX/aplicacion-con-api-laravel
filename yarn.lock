@@ -1587,6 +1587,11 @@
   resolved "https://registry.npmjs.org/@react-native/normalize-color/-/normalize-color-2.0.0.tgz"
   integrity sha512-Wip/xsc5lw8vsBlmY2MO/gFLp3MvuZ2baBZjDeTjjndMgM0h5sxz7AZR62RDPGgstp8Np7JzjvVqVT7tpFZqsw==
 
+"@react-native/normalize-colors@*":
+  version "0.73.0"
+  resolved "https://registry.npmjs.org/@react-native/normalize-colors/-/normalize-colors-0.73.0.tgz"
+  integrity sha512-EmSCmJ0djeMJadeFsms6Pl/R85i9xSJMc+tyJu/GEMkKXBVyYQyqanK4RHFU0v8MO90OWj+SiFXjCkKYiJ6mkg==
+
 "@react-native/polyfills@2.0.0":
   version "2.0.0"
   resolved "https://registry.npmjs.org/@react-native/polyfills/-/polyfills-2.0.0.tgz"
@@ -1708,6 +1713,30 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/d3-path@^1":
+  version "1.0.9"
+  resolved "https://registry.npmjs.org/@types/d3-path/-/d3-path-1.0.9.tgz"
+  integrity sha512-NaIeSIBiFgSC6IGUBjZWcscUJEq7vpVu7KthHN8eieTV9d9MqkSOZLH4chq1PmcKy06PNe3axLeKmRIyxJ+PZQ==
+
+"@types/d3-scale@^1":
+  version "1.0.17"
+  resolved "https://registry.npmjs.org/@types/d3-scale/-/d3-scale-1.0.17.tgz"
+  integrity sha512-baIP5/gw+PS8Axs1lfZCeIjcOXen/jxQmgFEjbYThwaj2drvivOIrJMh2Ig4MeenrogCH6zkhiOxCPRkvN1scA==
+  dependencies:
+    "@types/d3-time" "^1"
+
+"@types/d3-shape@^1":
+  version "1.3.8"
+  resolved "https://registry.npmjs.org/@types/d3-shape/-/d3-shape-1.3.8.tgz"
+  integrity sha512-gqfnMz6Fd5H6GOLYixOZP/xlrMtJms9BaS+6oWxTKHNqPGZ93BkWWupQSCYm6YHqx6h9wjRupuJb90bun6ZaYg==
+  dependencies:
+    "@types/d3-path" "^1"
+
+"@types/d3-time@^1":
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/@types/d3-time/-/d3-time-1.1.1.tgz"
+  integrity sha512-ULX7LoqXTCYtM+tLYOaeAJK7IwCT+4Gxlm2MaH0ErKLi07R5lh8NHCAyWcDkCCmx1AfRcBEV6H9QE9R25uP7jw==
+
 "@types/eslint-visitor-keys@^1.0.0":
   version "1.0.0"
   resolved "https://registry.npmjs.org/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz"
@@ -1771,6 +1800,17 @@
   version "15.7.5"
   resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz"
   integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
+
+"@types/react-native-svg-charts@^5.0.12":
+  version "5.0.12"
+  resolved "https://registry.npmjs.org/@types/react-native-svg-charts/-/react-native-svg-charts-5.0.12.tgz"
+  integrity sha512-26BmFrOqWMEni9KuBbtzY6e5Fsku1xk8j6Zkq1emfbR5XXLAoGt9NpETK+dHpfl5M2xy55yIcHW4C0Qv+ZXCOQ==
+  dependencies:
+    "@types/d3-scale" "^1"
+    "@types/d3-shape" "^1"
+    "@types/react" "*"
+    "@types/react-native" "*"
+    react-native-svg "^6.2.1"
 
 "@types/react-native-video@^5.0.14":
   version "5.0.14"
@@ -2691,6 +2731,13 @@ color-convert@^1.9.0:
   dependencies:
     color-name "1.1.3"
 
+color-convert@^1.9.1:
+  version "1.9.3"
+  resolved "https://registry.npmjs.org/color-convert/-/color-convert-1.9.3.tgz"
+  integrity sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==
+  dependencies:
+    color-name "1.1.3"
+
 color-convert@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz"
@@ -2698,7 +2745,7 @@ color-convert@^2.0.1:
   dependencies:
     color-name "~1.1.4"
 
-color-name@~1.1.4:
+color-name@^1.0.0, color-name@~1.1.4:
   version "1.1.4"
   resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
@@ -2707,6 +2754,22 @@ color-name@1.1.3:
   version "1.1.3"
   resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.3.tgz"
   integrity sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==
+
+color-string@^1.5.2:
+  version "1.9.1"
+  resolved "https://registry.npmjs.org/color-string/-/color-string-1.9.1.tgz"
+  integrity sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==
+  dependencies:
+    color-name "^1.0.0"
+    simple-swizzle "^0.2.2"
+
+color@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/color/-/color-2.0.1.tgz"
+  integrity sha512-ubUCVVKfT7r2w2D3qtHakj8mbmKms+tThR8gI8zEYCbUBl8/voqFGt3kgBqGwXAopgXybnkuOq+qMYCRrp4cXw==
+  dependencies:
+    color-convert "^1.9.1"
+    color-string "^1.5.2"
 
 colorette@^1.0.7:
   version "1.4.0"
@@ -2854,6 +2917,77 @@ csstype@^3.0.2:
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.2.tgz"
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
+d3-array@^1.2.0:
+  version "1.2.4"
+  resolved "https://registry.npmjs.org/d3-array/-/d3-array-1.2.4.tgz"
+  integrity sha512-KHW6M86R+FUPYGb3R5XiYjXPq7VzwxZ22buHhAEVG5ztoEcZZMLov530mmccaqA1GghZArjQV46fuc8kUqhhHw==
+
+d3-collection@1:
+  version "1.0.7"
+  resolved "https://registry.npmjs.org/d3-collection/-/d3-collection-1.0.7.tgz"
+  integrity sha512-ii0/r5f4sjKNTfh84Di+DpztYwqKhEyUlKoPrzUFfeSkWxjW49xU2QzO9qrPrNkpdI0XJkfzvmTu8V2Zylln6A==
+
+d3-color@1:
+  version "1.4.1"
+  resolved "https://registry.npmjs.org/d3-color/-/d3-color-1.4.1.tgz"
+  integrity sha512-p2sTHSLCJI2QKunbGb7ocOh7DgTAn8IrLx21QRc/BSnodXM4sv6aLQlnfpvehFMLZEfBc6g9pH9SWQccFYfJ9Q==
+
+d3-format@1:
+  version "1.4.5"
+  resolved "https://registry.npmjs.org/d3-format/-/d3-format-1.4.5.tgz"
+  integrity sha512-J0piedu6Z8iB6TbIGfZgDzfXxUFN3qQRMofy2oPdXzQibYGqPB/9iMcxr/TGalU+2RsyDO+U4f33id8tbnSRMQ==
+
+d3-interpolate-path@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/d3-interpolate-path/-/d3-interpolate-path-2.0.0.tgz"
+  integrity sha512-q7Wqn0CoWpMfrvTqoLvD099MMqeKRE0jKY3MzruePkZoD5hYzJ8xbGadGDRkq0xjiX0hxpr0Jtt92iOYFt600A==
+  dependencies:
+    d3-interpolate "^1.1.1"
+
+d3-interpolate@^1.1.1, d3-interpolate@1:
+  version "1.4.0"
+  resolved "https://registry.npmjs.org/d3-interpolate/-/d3-interpolate-1.4.0.tgz"
+  integrity sha512-V9znK0zc3jOPV4VD2zZn0sDhZU3WAE2bmlxdIwwQPPzPjvyLkd8B3JUVdS1IDUFDkWZ72c9qnv1GK2ZagTZ8EA==
+  dependencies:
+    d3-color "1"
+
+d3-path@1:
+  version "1.0.9"
+  resolved "https://registry.npmjs.org/d3-path/-/d3-path-1.0.9.tgz"
+  integrity sha512-VLaYcn81dtHVTjEHd8B+pbe9yHWpXKZUC87PzoFmsFrJqgFwDe/qxfp5MlfsfM1V5E/iVt0MmEbWQ7FVIXh/bg==
+
+d3-scale@^1.0.6:
+  version "1.0.7"
+  resolved "https://registry.npmjs.org/d3-scale/-/d3-scale-1.0.7.tgz"
+  integrity sha512-KvU92czp2/qse5tUfGms6Kjig0AhHOwkzXG0+PqIJB3ke0WUv088AHMZI0OssO9NCkXt4RP8yju9rpH8aGB7Lw==
+  dependencies:
+    d3-array "^1.2.0"
+    d3-collection "1"
+    d3-color "1"
+    d3-format "1"
+    d3-interpolate "1"
+    d3-time "1"
+    d3-time-format "2"
+
+d3-shape@^1.0.6:
+  version "1.3.7"
+  resolved "https://registry.npmjs.org/d3-shape/-/d3-shape-1.3.7.tgz"
+  integrity sha512-EUkvKjqPFUAZyOlhY5gzCxCeI0Aep04LwIRpsZ/mLFelJiUfnK56jo5JMDSE7yyP2kLSb6LtF+S5chMk7uqPqw==
+  dependencies:
+    d3-path "1"
+
+d3-time-format@2:
+  version "2.3.0"
+  resolved "https://registry.npmjs.org/d3-time-format/-/d3-time-format-2.3.0.tgz"
+  integrity sha512-guv6b2H37s2Uq/GefleCDtbe0XZAuy7Wa49VGkPVPMfLL9qObgBST3lEHJBMUp8S7NdLQAGIvr2KXk8Hc98iKQ==
+  dependencies:
+    d3-time "1"
+
+d3-time@1:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/d3-time/-/d3-time-1.1.0.tgz"
+  integrity sha512-Xh0isrZ5rPYYdqhAVk8VLnMEidhz5aP7htAADH6MfzgmmicPkTo8LhkLxci61/lCB7n7UmE3bN0leRt+qvkLxA==
+
 data-urls@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/data-urls/-/data-urls-2.0.0.tgz"
@@ -2984,6 +3118,15 @@ deprecated-react-native-prop-types@^2.2.0:
   integrity sha512-pWD0voFtNYxrVqvBMYf5gq3NA2GCpfodS1yNynTPc93AYA/KEMGeWDqqeUB6R2Z9ZofVhks2aeJXiuQqKNpesA==
   dependencies:
     "@react-native/normalize-color" "*"
+    invariant "*"
+    prop-types "*"
+
+deprecated-react-native-prop-types@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/deprecated-react-native-prop-types/-/deprecated-react-native-prop-types-4.0.0.tgz"
+  integrity sha512-q0kk77qFPC4adlnZH7cv9lfbHALeaTkl7wT1uNERc+e0Os3KcBKKy1rVliTE8sfey6TP6OPzoIXpr9OPidvvHw==
+  dependencies:
+    "@react-native/normalize-colors" "*"
     invariant "*"
     prop-types "*"
 
@@ -4146,6 +4289,11 @@ is-arrayish@^0.2.1:
   resolved "https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.2.1.tgz"
   integrity sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==
 
+is-arrayish@^0.3.1:
+  version "0.3.2"
+  resolved "https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.3.2.tgz"
+  integrity sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==
+
 is-bigint@^1.0.1:
   version "1.0.4"
   resolved "https://registry.npmjs.org/is-bigint/-/is-bigint-1.0.4.tgz"
@@ -5151,7 +5299,7 @@ lodash.truncate@^4.4.2:
   resolved "https://registry.npmjs.org/lodash.truncate/-/lodash.truncate-4.4.2.tgz"
   integrity sha512-jttmRe7bRse52OsWIMDLaXxWqRAmtIUccAQ3garviCqJjafXOfNMO0yMfNpdD6zbGaTU0P5Nz7e7gAT6cKmJRw==
 
-lodash@^4.17.10, lodash@^4.17.15, lodash@^4.7.0:
+lodash@^4.16.6, lodash@^4.17.10, lodash@^4.17.15, lodash@^4.7.0:
   version "4.17.21"
   resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -6069,6 +6217,11 @@ path-type@^4.0.0:
   resolved "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+pegjs@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.npmjs.org/pegjs/-/pegjs-0.10.0.tgz"
+  integrity sha512-qI5+oFNEGi3L5HAxDwN2LA4Gg7irF70Zs25edhjld9QemOgp0CbvMtbFcMvFtEo1OityPrcCzkQFB8JP/hxgow==
+
 picocolors@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/picocolors/-/picocolors-1.0.0.tgz"
@@ -6165,7 +6318,7 @@ prompts@^2.0.1, prompts@^2.4.0:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@*, prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@*, prop-types@^15.5.7, prop-types@^15.6.0, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -6283,6 +6436,35 @@ react-native-screens@^3.20.0, "react-native-screens@>= 3.0.0":
     react-freeze "^1.0.0"
     warn-once "^0.1.0"
 
+react-native-svg-charts@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.npmjs.org/react-native-svg-charts/-/react-native-svg-charts-5.4.0.tgz"
+  integrity sha512-5TaIGSihJaHCGFj32Tc07hZrqqTpvdyAx89PIrW2nLf2tijd61+3UE3jtsiHOvfeAyDgSTWjv6s9qG9d2di7Pw==
+  dependencies:
+    d3-array "^1.2.0"
+    d3-interpolate-path "2.0.0"
+    d3-scale "^1.0.6"
+    d3-shape "^1.0.6"
+    prop-types "^15.6.0"
+
+react-native-svg@^6.2.1:
+  version "6.5.3"
+  resolved "https://registry.npmjs.org/react-native-svg/-/react-native-svg-6.5.3.tgz"
+  integrity sha512-bKyKHrSvOK09MqsFkQiD4NZp7nM4uf+MoEtWKPfOste8g/3ilc+ZXQDc95iur7xgi0GURHHCXZbz2i8g0cX8sg==
+  dependencies:
+    color "^2.0.1"
+    lodash "^4.16.6"
+    pegjs "^0.10.0"
+
+react-native-svg@^6.2.1||^7.0.3:
+  version "7.2.1"
+  resolved "https://registry.npmjs.org/react-native-svg/-/react-native-svg-7.2.1.tgz"
+  integrity sha512-9T0m/FSv8l7Vohcuc1odLHK/TCRCNWyhMGOvg6pblbhjPWTM+CSF+jgVxU4i92dKCvsYj0GYpEtuzYknyCAuqw==
+  dependencies:
+    color "^2.0.1"
+    lodash "^4.16.6"
+    pegjs "^0.10.0"
+
 react-native-video@^5.2.1:
   version "5.2.1"
   resolved "https://registry.npmjs.org/react-native-video/-/react-native-video-5.2.1.tgz"
@@ -6301,7 +6483,7 @@ react-native-webview@^12.0.2:
     escape-string-regexp "2.0.0"
     invariant "2.2.4"
 
-react-native@*, react-native@0.70.6:
+react-native@*, react-native@>=0.46.0, react-native@>=0.50.0, react-native@0.70.6:
   version "0.70.6"
   resolved "https://registry.npmjs.org/react-native/-/react-native-0.70.6.tgz"
   integrity sha512-xtQdImPHnwgraEx3HIZFOF+D1hJ9bC5mfpIdUGoMHRws6OmvHAjmFpO6qfdnaQ29vwbmZRq7yf14sbury74R/w==
@@ -6361,7 +6543,7 @@ react-test-renderer@18.1.0:
     react-shallow-renderer "^16.15.0"
     scheduler "^0.22.0"
 
-react@*, "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", react@^18.1.0, react@>=17.0.0, react@18.1.0:
+react@*, "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", react@^18.1.0, react@>=16.0.0-alpha.12, react@>=17.0.0, react@18.1.0:
   version "18.1.0"
   resolved "https://registry.npmjs.org/react/-/react-18.1.0.tgz"
   integrity sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ==
@@ -6848,6 +7030,13 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.7"
   resolved "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
+
+simple-swizzle@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.npmjs.org/simple-swizzle/-/simple-swizzle-0.2.2.tgz"
+  integrity sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==
+  dependencies:
+    is-arrayish "^0.3.1"
 
 sisteransi@^1.0.5:
   version "1.0.5"

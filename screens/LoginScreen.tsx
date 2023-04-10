@@ -26,7 +26,12 @@ const LoginScreen = ({ navigation }) => {
           const role = responseJson.data.role;
           if (role === 'admin') {
             navigation.navigate('Admin');
-          } else {
+          }  
+          else if (role === 'coach') {
+            navigation.navigate('Coach');
+          }
+          
+          else {
             navigation.navigate('User');
           }
         } else {
